@@ -1,0 +1,33 @@
+{
+  "availability-zones:account=351334432989:region=eu-west-1": [
+    "eu-west-1a",
+    "eu-west-1b",
+    "eu-west-1c"
+  ],
+  "availability-zones:account=351334432989:region=eu-central-1": [
+    "eu-central-1a",
+    "eu-central-1b",
+    "eu-central-1c"
+  ],
+  "ssm:account=351334432989:parameterName=/macos/vpc/id:region=eu-central-1": "vpc-0a06a64e7ba2a66d9",
+  "vpc-provider:account=351334432989:filter.vpc-id=vpc-0a06a64e7ba2a66d9:region=eu-central-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-0a06a64e7ba2a66d9",
+    "vpcCidrBlock": "10.1.0.0/16",
+    "ownerAccountId": "351334432989",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-03fe6055097ce7a28",
+            "cidr": "10.1.1.0/24",
+            "availabilityZone": "eu-central-1a",
+            "routeTableId": "rtb-0f175153462878797"
+          }
+        ]
+      }
+    ]
+  }
+}
